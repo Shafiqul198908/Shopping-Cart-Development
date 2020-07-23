@@ -111,6 +111,9 @@
          const currentNumber = document.getElementById("currentNumber").value;
          const convertNumber = parseFloat(currentNumber);
          const decreaseNumber = convertNumber - 1;
+         if(decreaseNumber < 0){
+            decreaseNumber = 0
+         };
          document.getElementById("currentNumber").value = decreaseNumber;
 
          const priceOfOne = document.getElementById("priceOfOne").innerText;
@@ -121,6 +124,7 @@
          const subTotal = document.getElementById("subTotal").innerText;
          const convertSubTotal = parseFloat(subTotal);
          const decreaseSubTotal = convertSubTotal - 1219;
+        
          document.getElementById("subTotal").innerText = decreaseSubTotal;
 
          const total = document.getElementById("total").innerText;
@@ -159,6 +163,9 @@
          const caseCurrentNumber = document.getElementById("caseCurrentNumber").value;
          const caseConvertNumber = parseFloat(caseCurrentNumber);
          const decreaseCaseNumber = caseConvertNumber - 1;
+         if(decreaseCaseNumber < 0){
+            decreaseCaseNumber = 0
+         };
          document.getElementById("caseCurrentNumber").value = decreaseCaseNumber;
 
          const casePriceOne = document.getElementById("casePriceOne").innerText;
